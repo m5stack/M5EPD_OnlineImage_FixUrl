@@ -267,7 +267,7 @@ void setup()
     M5.TP.SetRotation(90);
     esp_err_t load_err = LoadFromExt();
 
-    if (!SPIFFS.begin(1))
+    if (!SPIFFS.begin())
     {
         log_e("SPIFFS Mount Failed");
         while (1)
